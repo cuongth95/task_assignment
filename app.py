@@ -27,7 +27,7 @@ def get_and_cache_dataframe(uploaded_excel: UploadedFile) -> pd.DataFrame:
     return pd.read_excel(uploaded_excel)
 
 
-st.write("# I❤️🥖- Task Assigment App")
+st.write("# I❤️🥖- Task Assigment App (v0.0.1)")
 st.write("Tutorial: Fill params -> Upload excel file -> Click the button Solve -> Download the output excel file.")
 st.write("## Parameters")
 num_preview_rows = st.slider("Number of preview rows", 1, 500, 100)
