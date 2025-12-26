@@ -123,7 +123,7 @@ if st.button("Solve", type="primary", disabled=not is_valid):
             do_strict_cond_all_groups_are_avail_within_a_task_group=do_strict,
             debug=0,
         )
-    if out_df:
+    if out_df is not None:
         st.success("Task finished! Wait a moment and click on the button Dowload to get the output file!")
         if do_verbose:
             st.write("Debug info: ", out_dict)
